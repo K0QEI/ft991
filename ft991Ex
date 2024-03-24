@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rigctld -m 1035 -s 38400 -r /dev/serial/by-id/usb-Silicon_Labs_CP2105_Dual_USB_to_UART_Bridge_Controller_AH057M5G080385-if00-port0 -t4532 &
+sleep 5
+rigctld -m2 -r127.0.0.1:4534 -t14532
